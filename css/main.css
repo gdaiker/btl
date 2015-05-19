@@ -1,0 +1,1617 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #271c15;
+    font-size: 10px;
+    line-height: 1.4;
+	font-family: font-family: 'Merriweather', serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b1cd61;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b1cd61;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: inline-block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin-top: 1.7em;
+	margin-bottom: 3.5em;
+    padding: 0;
+	width: 150px;
+}
+
+hr.brown{
+    border-top: 1px solid #271c15;
+	margin: 1.7em 0 3.5em;
+}
+
+hr.green{
+    border-top: 1px solid #b1cd61;
+	margin: 1.7em 0 3.5em;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   GLOBAL STYLE
+   ========================================================================== */
+
+h1{
+	font-family: 'Noto Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 2.25em;
+	font-weight: 600;
+	margin: .5em 0;
+	color: #271c15;
+}
+
+h1.bigger{
+	font-size: 3.5em;
+}
+
+h1.light{
+	font-weight: 400;
+}
+
+h1.inline{
+	margin:  3em 0 .5em;
+	font-size: 2em;
+}
+
+h2{
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	font-size: 3.25em;
+	line-height: 1.8;
+	margin: .5em 0;
+	color: #271c15;
+}
+
+h3{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	color: #271c15;
+}
+
+h4{
+	font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.8;
+    margin: 0 0 1.25em;
+}
+
+p{
+	font-family: 'Merriweather', serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 2.2;
+    margin: 0 0 1.25em;
+}
+
+p.bigger{
+	font-size: 1.8em;
+}
+
+p.even-bigger{
+	font-size: 2.5em;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	-webkit-transition: all 0.35s ease-in-out 0s;
+    -moz-transition: all 0.35s ease-in-out 0s;
+    -o-transition: all 0.35s ease-in-out 0s;
+    transition: all 0.35s ease-in-out 0s;
+}
+
+p a{
+	color: #b1cd61;
+}
+
+
+p a:hover{
+	color: #93ab3b;
+}
+
+img{
+	-webkit-transition: all 0.35s ease-in-out 0s;
+    -moz-transition: all 0.35s ease-in-out 0s;
+    -o-transition: all 0.35s ease-in-out 0s;
+    transition: all 0.35s ease-in-out 0s;
+}
+
+a img:hover{
+	opacity: .5;
+}
+
+.white{
+	color: #FFFFFF;
+}
+
+.green{
+	color: #b1cd61;
+}
+
+.brown{
+	color: #271c15;
+}
+
+.green-bg{
+	background: #b1cd61;
+}
+
+.brown-bg{
+	background: #271c15;
+}
+
+/********** Universal Classes **********/
+
+.page-width{
+	width:80%;
+	margin:0 auto;
+	max-width: 1500px;
+}
+
+.full-width{
+	width:100%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.half{
+	width:50%;
+	box-sizing: border-box;
+}
+
+.two-thirds{
+	width: 66.66%;
+}
+
+.one-third{
+	width: 33.33%;
+}
+
+.three-column article{
+	box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+button{
+	margin: 2em 0 0;
+    padding: 15px 41px;
+	color:#ffffff;
+	background-color:#ef4824;
+	text-transform:uppercase;
+	font-size:1.5em;
+	display:inline-block;
+	letter-spacing:2px;
+	border-radius:5px;
+	line-height:1em;
+	transition:all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.35s ease-in-out 0s;
+    -moz-transition: all 0.35s ease-in-out 0s;
+    -o-transition: all 0.35s ease-in-out 0s;
+    transition: all 0.35s ease-in-out 0s;
+}
+
+.small-button{
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    padding: 13px 35px;
+}
+
+button:hover{
+	background:#b53621;
+}
+
+.block{
+	position: relative;
+	float:left;
+	transition:all 0.5s ease-in-out 0s;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	text-align:center;
+}
+
+.block:before{
+	content: "";
+	display: block;
+	padding-top: 80%; 	/* initial ratio of 1:1*/
+}
+
+.box-content{
+	left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 77%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+/********** Pre Header **********/
+
+.pre-header{
+	background: none repeat scroll 0 0 #3a2d25;
+    box-sizing: border-box;
+    height: 26px;
+    left: 0;
+    padding: 2px 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.pre-header p{
+	font-size: 1.1em;
+	text-align: right;
+	margin-right: 7%;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.pre-header p a{
+	color: #b1cd61;
+}
+
+.pre-header p a:hover{
+	color: #e5f2ad;
+}
+
+/********** Main Header **********/
+
+.main-header{
+	background: none repeat scroll 0 0 #271c15;
+    box-sizing: border-box;
+    height: 60px;
+    left: 0;
+    position: fixed;
+    top: 26px;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.main-header img{
+	float: left;
+	margin-top: 9px;
+    width: 48px;
+	margin-left: 5%;
+}
+
+/********** Main Navigation **********/
+
+.main-nav{
+	float: right;
+	margin-right: 5%;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	float: left;
+}
+
+.main-nav ul li a{
+	box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    font-size: 1.45em;
+    font-weight: 300;
+    height: 60px;
+    letter-spacing: 2px;
+    padding: 21px 25px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav ul a:hover{
+	background: #3a2d25;
+}
+
+
+/********** Moblie Navigation **********/
+
+#mobile-nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -250px;
+    background: #516d7d;
+    max-width: 250px;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+	z-index:100;
+	/* flex-direction */
+  	-webkit-flex-direction: column;
+  	-ms-flex-direction: column;
+  	flex-direction: column;
+}
+
+#mobile-nav a {
+    color: #b1cd61;
+	text-transform:uppercase;
+    border-bottom: 1px solid #f9f9f9;
+    text-decoration: none;
+	-webkit-justify-content: center;
+    justify-content: center;
+	background: #271c15; 
+	/* display:flex */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	/* flex */
+	-webkit-box-flex: 1 1 0;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	-moz-box-flex: 1 1 0;         /* OLD - Firefox 19- */
+  	-webkit-flex: 1 1 0;          /* Chrome */
+  	-ms-flex: 1 1 0;              /* IE 10 */
+  	flex: 1 1 0;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	/* flex-direction */
+  	-webkit-flex-direction: column;
+  	-ms-flex-direction: column;
+  	flex-direction: column;
+  	font-size: 1.45em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+#mobile-nav a:hover{ 
+	background: #b1cd61;
+	color: #271c15;
+}
+
+#mobile-nav{
+	display:none;
+}
+
+#navicon svg path{
+	fill:#ffffff;
+}
+
+#navicon svg:hover{
+	opacity:.5;
+}
+
+#navicon svg{
+	width:35px;
+	height:35px;
+}
+
+#navicon{
+	display:none;
+	float:right;
+	margin-top:10px;
+	z-index:999999;
+	postion:relative;
+	margin-right: 5%;
+}
+
+#navicon:hover{
+	cursor:pointer;
+}
+
+
+/* ==========================================================================
+   Mobile Nav Display
+   ========================================================================== */
+
+/* 1500px */ 
+@media only screen and (min-width: 93.75em) {
+	
+	.main-header{
+		height: 80px;
+	}
+	
+	.main-header img{
+		margin-top: 14px;
+		width: 59px;
+	}
+	
+	.main-nav ul li a{
+		height: 80px;
+		padding-top: 31px;
+	}
+	
+
+}
+
+
+/* 950px */ 
+@media only screen and (max-width: 59.375em) {
+	
+	.main-nav{ display: none; }
+	
+	#mobile-nav{ 
+	/* display:flex */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+  		display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	}
+	
+	#navicon { 
+		display: block; 
+	}
+	
+	#header-logo { 
+		display: none; 
+	}
+}
+
+/* 400px */
+@media screen and (max-width: 25em){
+
+	.main-header img {
+		margin-left: 15px;
+	}
+	
+	#navicon {
+		margin-right: 15px;
+	}
+
+}
+
+
+
+/* ==========================================================================
+   INDEX
+   ========================================================================== */
+
+/********** Hero **********/
+
+.hero{
+	background: url("../img/pallets-blue-sky.jpg") no-repeat scroll center center / cover #ffffff;
+    box-sizing: border-box;
+    padding-top: 200px;
+    position: relative;
+    width: 100%;
+	text-align: center;
+}
+
+.hero-text{
+	margin-bottom: 140px;
+}
+
+.hero-text p{
+	color: #ffffff;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 850px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    width: 90%;
+}
+
+.logo-text{
+	display: inline-block;
+}
+
+.logo-text img{
+	float: left;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.logo-text h1{
+	color: #ffffff;
+	font-size: 4em;
+	float: left;
+	margin: 0;
+}
+
+.hero-text h3{
+	color: #ffffff;
+    font-size: 3.15em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 2.5em;
+    margin: 0;
+	margin: -21px 0 0;
+}
+
+.hero-text h3 span{
+    font-size: 400%;
+    font-weight: bold;
+    letter-spacing: -4px;
+    margin: 0;
+	color: #b1cd61;
+}
+
+.hero .three-column{
+	width:100%;
+	height:310px;
+}
+
+.hero .three-column article{
+	background: rgba(39, 28, 21, .9);
+	height:100%;
+	text-align:center;
+	padding: 2.5% 20px 0;
+}
+
+.hero .three-column article:nth-child(2){
+	background: rgba(58, 45, 37, .9);
+}
+
+.hero .three-column article{
+	color: #b1cd61;
+}
+
+.hero .three-column article h1{
+	color: #b1cd61;
+}
+
+.hero .three-column img{
+	margin-bottom: 10px;
+    width: 17%;
+}
+
+.hero .three-column ul{
+	list-style-type: none;
+}
+
+.hero .three-column ul li{
+	font-size: 1.8em;
+	font-weight: 300;
+	margin: 5px 0;
+}
+
+/* ==========================================================================
+   INDEX MEDIA QUERIES
+   ========================================================================== */
+
+/* 835px */ 
+@media only screen and (max-width: 52.1875em) {
+	
+	.hero{
+		padding-top: 140px;
+	}
+	
+	.logo-text h1, .logo-text img{
+		float: none;
+	}
+	
+	.hero-text h3 {
+    	font-size: 3em;
+    	line-height: 2em;
+    	margin: -7px 0 0;
+	}	
+	
+	.hero-text h3 span{
+		font-size: 300%;
+		letter-spacing: 0;
+	}
+	
+	.hero .three-column article{
+		height: auto;
+    	padding: 50px 20px 75px;
+		width: 100%;
+		background: none repeat scroll 0 0 rgba(39, 28, 21, 1);
+	}
+	
+	.hero .three-column article:nth-child(2) {
+    	background: none repeat scroll 0 0 rgba(58, 45, 37, 1);
+	}
+	
+}
+
+/* 600px */ 
+@media only screen and (max-width: 37.5em) {
+	
+	.logo-text h1{
+		font-size: 2.75em;
+	}
+	
+	.hero-text h3{
+		font-size: 2em;
+	}
+	
+	.hero-text p{
+		font-size: 1.6em;
+		margin-top: 10px;
+	}
+	
+}
+
+/* 430px */ 
+@media only screen and (max-width: 26.875em) {
+	
+	.hero{
+		padding-top: 110px;
+	}
+	
+	.hero-text {
+    	margin-bottom: 90px;
+	}
+	
+	.logo-text h1{
+		font-size: 2em;
+	}
+	
+	.hero-text h3{
+		font-size: 1.6em;
+		line-height: 1.2em;
+		letter-spacing: 1px;
+		margin-top: 0;
+	}
+	
+	.hero-text h3 span{
+		font-size: 240%;
+    	line-height: 1em;
+	}
+	
+	.hero-text p{
+		margin: 20px auto;
+	}
+
+}
+
+
+/* ==========================================================================
+   PAGE 2
+   ========================================================================== */
+
+.page2{
+	padding-top: 86px;
+}
+
+.intro{
+	height:375px;
+}
+
+.intro div{
+	height: 100%;
+}
+
+.intro .two-thirds{
+	background: #9e816f;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.intro .one-third{
+	text-align: center;
+	box-sizing: border-box;
+	padding: 55px 75px 0;
+}
+
+.intro .one-third img{
+	margin: 10px 0;
+}
+
+.intro .one-third p{
+	line-height: 1.5em;
+    margin: 10px auto 13px;
+    max-width: 320px;
+}
+
+.content{
+	position:relative;
+}
+
+.content .two-thirds img{
+	display: block;
+    margin: 80px auto;
+    width: 150px;
+}
+
+.content .one-third{
+	height: 100%;
+}
+
+.content .page-width{
+	margin: 150px auto;
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer{
+	background: #271c15;
+}
+
+footer .two-thirds{
+	text-align: center;
+	padding-top: 95px;
+}
+
+footer .two-thirds button, footer .two-thirds img{
+	display: block;
+	margin: 10px auto 35px;
+}
+
+.footer-nav{
+	background: none repeat scroll 0 0 #93ab3b;
+    margin-top: 100px;
+    padding: 35px 0 50px;
+    width: 100%;
+}
+
+.footer-nav ul{
+	width: 455px;
+	margin: 0 auto;
+}
+
+.footer-nav ul li{
+	color: #ffffff;
+	padding: 0 20px;
+	text-transform: uppercase;
+	font-size: 1.45em;
+	letter-spacing: 1px; 
+	border-right: 1px solid #ffffff;
+}
+
+.footer-nav ul li a:hover{
+	color: #e5f2ad;
+}
+
+.footer-nav ul li:nth-child(3){
+	border: none;
+}
+
+footer .one-third{
+	padding: 67px 0 0 75px;
+	box-sizing: border-box;
+}
+
+footer .logo-text img{
+    height: 50px;
+}
+
+footer .logo-text h1{
+	font-size: 2.25em;
+	margin-top: 15px;
+}
+
+footer .one-third ul{
+	list-style-type: none;
+	margin: 11px 0 0 70px
+}
+
+footer .one-third ul p{
+	line-height: 1;
+}
+
+footer .one-third ul li:nth-child(4){
+	margin-top: 35px;
+}
+
+footer .one-third a{
+	color: #b1cd61;
+}
+
+footer .one-third a:hover{
+	color: #e5f2ad;
+}
+
+
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+   
+.intro .two-thirds{
+	padding-top: 70px;
+}
+
+.about .content .two-thirds{
+	padding: 7% 11% 0 9%;
+	box-sizing: border-box;
+}
+
+.about .content .one-third article{
+	height: 580px;
+	width: 100%;
+}
+
+.about .content .one-third .green-bg{
+	background: url("../img/trucks.jpg") no-repeat scroll center center / cover #b1cd61;
+}
+
+.about .content .one-third .brown-bg{
+	background: url("../img/mulch.jpg") no-repeat scroll center center / cover #271c15;
+}
+
+.about .image-call-out{
+	background: url("../img/wood-pile.jpg") no-repeat scroll center center / cover #271c15;
+	text-align: center;
+	padding: 150px 0;
+}
+
+.about .image-call-out h2{
+	width: 80%; 
+	margin: 0 auto;
+	font-size: 4em;
+}
+
+
+
+/* ==========================================================================
+   SERVICES PAGE
+   ========================================================================== */
+
+
+p.number{
+	border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 2.5em;
+    height: 55px;
+    margin-bottom: 25px;
+    padding: 0 0 0 21px;
+    width: 55px;
+}
+
+.content .half {
+    padding: 4% 7%;
+}
+
+.service-boxes .full-width{
+	background: #9e816f;
+	padding: 100px 0;
+}
+
+.service-boxes .box-content{
+	text-align: center;
+}
+
+.service-boxes .box-content hr{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pallets{
+	background: url("../img/pallets.jpg") no-repeat scroll center center / cover #dce9b9;
+}
+
+.crates{
+	background: url("../img/crates.jpg") no-repeat scroll center center / cover #bdd093;
+}
+
+.lumber{
+	background: url("../img/lumber.jpg") no-repeat scroll center center / cover #dce9b9;
+}
+
+
+/* ==========================================================================
+   ENVIRONMNET PAGE
+   ========================================================================== */
+ 
+.environment .content .left{
+	padding: 7% 11% 0 9%;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.environment .content .right{
+	width: 50%;
+	padding: 0;
+}
+  
+.environment .block{
+	float: none;
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+.environment .block:before{
+	padding-top: 33%;
+}
+
+.environment .content .right article:nth-child(1){
+	background: #bdd093;
+}
+
+.environment .content .right article:nth-child(2){
+	background: #dce9b9;
+}
+
+.environment .content .right article:nth-child(3){
+	background: #bdd093;
+}
+
+.environment .box-content h1{
+	float: left;
+	width: 89%;
+}
+
+.environment .content .right article:nth-child(1) h1{
+	margin-top: 1.5%;
+}
+
+.environment .content .right article:nth-child(2) h1{
+	margin-top: -.5%;
+}
+
+.environment .content .right article:nth-child(3) h1{
+	margin-top: 1.5%;
+}
+
+.environment .box-content img{
+	float: left;
+	margin-right: 3%;
+	width: 8%;
+}
+   
+
+/* ==========================================================================
+   CONTACT PAGE
+   ========================================================================== */
+   
+
+.contact .content{
+	background: #dce9b9;
+}
+
+.contact .content .left{
+	padding: 5% 10%;
+	box-sizing: border-box;
+	background: #ffffff;
+}
+
+.contact .right{
+	padding: 5%;
+	box-sizing: border-box;
+}
+
+form{
+	margin-top: 45px;
+}
+
+input, label, textarea{
+	display: block;
+}
+
+label{
+	font-size: 1.8em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+input, textarea{
+	box-sizing: border-box;
+	font-size: 1.6em;
+	color: #666666;
+	padding: 15px;
+	margin-bottom: 35px;
+}
+
+input{
+	width: 100%;
+}
+
+textarea{
+	height: 200px;
+    width: 100%;
+}
+
+.contact form button{
+	margin-top: 0;
+}
+
+input:focus, textarea:focus{
+	outline:none;
+	box-shadow: 0 0 5px rgba(39, 28, 21, .5);
+}
+
+label.error{
+	color:red;
+	margin:-17px 0 20px;
+}
+
+input.error, textarea.error{
+	border:1px solid red;
+}
+
+.contact footer .two-thirds{
+	padding: 245px 0 0;
+	background: url("../img/wood-pile.jpg") no-repeat scroll center center / cover #271c15;
+}
+
+
+/* ==========================================================================
+   PAGE 2: Media Queries
+   ========================================================================== */
+
+/* 1500px */
+@media screen and (max-width:96.875em){
+	.intro {
+ 	   height: 455px;
+	}
+	
+	.intro .two-thirds {
+    	padding-top: 55px;
+	}
+	
+    .contact .two-thirds, footer .two-thirds {
+    	width: 60%;
+	}
+	
+	.contact .one-third, footer .one-third {
+    	width: 40%;
+	}
+}
+
+/* 1455px */
+@media screen and (max-width:90.675em){
+	
+	.environment .block:before {
+    	padding-top: 40%;
+	}
+
+}
+
+/* 1230px */
+@media screen and (max-width:76.8725em){
+	
+	h3 {
+    	font-size: 1.75em;
+	}
+	
+	.intro{
+		height: auto;
+	}
+
+	.intro .one-third{
+		display: none;
+	}
+	
+	.intro .two-thirds{
+		width: 100%;
+		height: auto;
+		padding: 9%
+	}
+	
+	.content .left, .content .right, footer .left, footer .right{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	
+	.about .content .two-thirds {
+    	padding: 10% 11% 8%;
+	}
+	
+	.about .content .one-third article {
+    	height: auto;
+		width: 50%;
+    }
+	
+	.environment .content .left {
+    	box-sizing: border-box;
+    	padding: 7% 9%;
+    	width: 100%;
+	}
+	
+	.environment .content .left img{
+		display: block;
+		margin: 20px auto;
+	}
+	
+	.environment .content .left h1{
+		text-align: left;
+	}
+	
+	.environment .content .left p{
+		text-align: left;
+	}
+	
+	.environment .content .right {
+    	padding: 0;
+    	width: 100%;
+	}
+	
+	.environment .content .right .block {
+    	float: left;
+		height: auto;
+		padding: 100px 0;
+	}
+	
+	.environment .content .right .block:before {
+		padding: 0px;
+	}
+	
+	.environment .content .right .box-content {
+    	display: block;
+		position:relative;
+		width: 80%; 
+		margin:0 auto;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform:none;
+		left: auto;
+		top: auto;
+		text-align: center;
+	}
+	
+	.environment .box-content img {
+    	float: none;
+    	margin: 0 auto 10px;
+    	width: 65px;
+	}
+	
+	.environment .box-content h1 {
+    	float: none;
+    	width: 90%;
+		margin: 1.5% auto 0;
+	}
+	
+	.environment .content .right article:nth-child(2) h1 {
+    	margin-top: 1.5%;
+	}
+	
+	.contact .content .one-third{
+		padding: 15% 10% 20%;
+	}
+	
+	.contact .content .two-thirds{
+		text-align: center;
+	}
+	
+	.contact .content hr{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.contact .content .two-thirds p{
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.contact .content .two-thirds{
+		padding: 10% 5%;
+	}
+	
+	.contact .content hr {
+    	margin: 1.7em auto 3.5em;
+	}
+
+	.contact footer .two-thirds{
+		width: 100%;
+		padding: 210px 0 0 0;
+	}
+	
+	.contact footer .one-third{
+		width: 100%;
+	}
+	
+	footer .two-thirds p{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	footer .one-third{
+		text-align: center;
+		padding: 105px 0 75px;
+	}
+	
+	footer .one-third ul {
+    	margin: 11px 0 0 0;
+	}
+	
+	footer .logo-text {
+    	margin-left: -49px;
+	}
+	
+	p.number {
+    	font-size: 2em;
+   		height: 45px;
+    	padding: 2px 0 0 17px;
+    	width: 45px;
+	}
+	
+	.content .half {
+    	padding: 10%;
+	}
+
+}
+
+/* 850px */ 
+@media only screen and (max-width: 53.125em) {
+	
+	.about .content .one-third article {
+    	height: 450px;
+		width: 100%;
+    }
+	
+	.environment .content .left {
+    	padding: 12% 10%;
+	}
+
+}
+
+/* 650px */
+@media screen and (max-width:40.625em){
+
+	.pre-header, footer nav{
+		display: none;
+	}
+	
+	.main-header{
+		top: 0;
+	}
+	
+	.page2 {
+    	padding-top: 60px;
+	}
+	
+	p.bigger{
+		font-size: 1.6em;
+	}
+	
+	h1.bigger{
+		font-size: 2.25em;
+	}
+	
+	h2{
+		font-size: 2.75em;
+	}
+	
+	h4{
+		font-size: 2em;
+	}
+	
+	.about .image-call-out h2 {
+    	font-size: 3em;
+	}
+	
+	footer .two-thirds {
+    	padding: 95px 0;
+	}
+	
+	footer .logo-text {
+    	margin: 0 auto 20px;
+	}
+	
+	.logo-text h1, .logo-text img{
+		float: none;
+		display: block;
+		margin:0 auto;
+	}
+	
+	footer .logo-text h1 {
+    	font-size: 2.25em;
+    	margin-top: 7px;
+	}
+	
+	footer .one-third ul p {
+    	font-size: 1.4em;
+    	line-height: 0.5;
+	}
+	
+	.service-boxes .one-third{
+		width: 100%;
+	}
+	
+	p.even-bigger{
+		font-size: 1.8em;
+	}
+
+}
+
+/* 400px */
+@media screen and (max-width: 25em){
+
+	.intro .two-thirds {
+    	padding: 9%;
+    }
+	
+	h2{
+		font-size: 2em;
+	}
+	
+	.content .page-width {
+    	margin: 70px auto;
+	}
+	
+	.content .half {
+    	padding: 8% 10% 10%;
+	}
+	
+	.environment .content .left {
+    	padding: 18% 5%;
+	}
+	
+	.service-boxes .full-width, footer .two-thirds {
+    	padding: 50px 0;
+	}
+	
+	.environment .box-content h1 {
+    	font-size: 1.8em;
+	}
+	
+	footer .one-third {
+    	padding: 65px 0 75px;
+    }
+
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
